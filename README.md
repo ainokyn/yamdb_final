@@ -153,4 +153,4 @@ docker-compose exec web python manage.py loaddata fixtures.json
 ```
 docker-compose down -v 
 ``` 
-(https://github.com/github/docs/actions/workflows/yamdb_workflow.yml/badge.svg?branch=main)
+![example workflow](https://github.com/ainokyn/yamdb_final/actions/workflows/yamdb_workflow.ym/badge.svg)
