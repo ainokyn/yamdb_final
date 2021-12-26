@@ -41,6 +41,8 @@ jobs:
       - name: Push to Docker Hub
         uses: docker/build-push-action@v2 
         with:
+          context: ./api_yamdb/
+          file: ./api_yamdb/Dockerfile
           push: true
           tags: ${{ secrets.DOCKER_USERNAME }}/api_yamdb:v2
           
@@ -58,6 +60,7 @@ jobs:
           script: |
             sudo docker-compose stop
             sudo docker-compose rm web
+            cd infra/
             touch .env
             echo DB_ENGINE=${{ secrets.DB_ENGINE }} >> .env
             echo DB_NAME=${{ secrets.DB_NAME }} >> .env
