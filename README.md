@@ -153,3 +153,4 @@ docker-compose exec web python manage.py loaddata fixtures.json
 ```
 docker-compose down -v 
 ``` 
+![example branch parameter](https://github.com/github/docs/actions/workflows/yamdb_workflow.yml/badge.svg?branch=feature-1)
