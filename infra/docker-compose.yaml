@@ -13,8 +13,9 @@ services:
     # адрес файла, где хранятся переменные окружения
     env_file:
       - ./.env
-  web:
+  web:   
     build: ../api_yamdb/.
+    image: litops/yamdb_final:v2
     restart: always
     volumes:
       # Контейнер web будет работать с данными, хранящиеся в томе static_value, 
