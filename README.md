@@ -154,4 +154,3 @@ docker-compose exec web python manage.py loaddata fixtures.json
 ```
 docker-compose down -v 
 ``` 
-
